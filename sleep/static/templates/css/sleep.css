@@ -1,4 +1,4 @@
-.base-header {
+.page-header {
 
   margin-top: 0;
   padding: 20px 20px 20px 40px;
@@ -59,4 +59,16 @@ body {
 
 .comment {
   margin: 20px 0px 20px 20px;
+}
+
+.sleep-detail {
+  font-family: sans-serif;
+  padding: 20px 10px 20px 10px;
+
+}
+
+.sleep-detail .result {
+  align-items: flex-end;
+  padding-left: 30px;
+
 }
