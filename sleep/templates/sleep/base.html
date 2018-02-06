@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/sleep.css' %}">
+    <link rel="stylesheet" href="{% static 'templates/css/sleep.css' %}">
   </head>
   <body>
-    <div class"page-header">
-      #<!-- TODO: Nav menu here for authenticated users -->
+    <div class"base-header">
+      <!-- TODO: Nav menu here for authenticated users -->
       <!-- TODO: Nav menu here for anonymous users / login redirect -->
 
       <h1><a href="/">SenSibDiary</a></h1>
@@ -18,7 +18,7 @@
     <div class="content container">
       <div class="row">
         <div class="col-md-8">
-          {% blockcontent %}
+          {% block content %}
           {% endblock%}
         </div>
       </div>

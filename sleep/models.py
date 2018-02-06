@@ -71,7 +71,7 @@ class Sleep(models.Model):
 
 
 class SleepInterruption(models.Model):
-    sleep_date = models.ForeignKey(Sleep, on_delete=models.CASCADE)
+    sleep_date = models.ForeignKey(Sleep, on_delete=models.CASCADE, related_name='interruptions')
 
     interruption_time = models.TimeField('time woke during sleep')
 

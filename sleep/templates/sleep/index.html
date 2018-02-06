@@ -1,0 +1,10 @@
+{% extends 'sleep/base.html' %}
+  {% block content %}
+    {% for sleep in latest_sleeps_lists %}
+
+        <p class="date">Sleep date: {{ sleep.sleep_date|date:'d-m-Y'}}</p>
+          <div class="sleep-divider"></div>
+
+      {% endfor %}
+
+  {% endblock %}

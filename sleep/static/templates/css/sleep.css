@@ -1,13 +1,15 @@
-.page-header {
-  background-color: teal;
+.base-header {
+
   margin-top: 0;
   padding: 20px 20px 20px 40px;
+  background-color: teal;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
   color: #ffffff;
   font-size: 36pt;
   text-decoration: none;
+
 }
 
 .content {

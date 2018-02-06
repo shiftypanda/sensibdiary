@@ -1,0 +1,24 @@
+{% extends 'sleep/base.html' %}
+  {% block content %}
+
+  <h1 class="sleep-detail">{{ sleep.sleep_date|date:'d-m-Y'}}</h1>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+      <div class="sleep">
+        <p class="date">Sleep date: {{ sleep.sleep_date|date:'d-m-Y'}}</p>
+        <div class="sleep-detail">
+          <table>
+          <tr>
+            <td>Time started preparing for bed: {{ sleep.time_start_preparing_for_sleep|date:'H:i e'}}</tr>
+          <tr>
+            <td>Time went to bed: {{ sleep.time_went_into_bed|date:'H:i e' }}</tr>
+          <tr>
+            <td>Time went to sleep: {{ sleep.time_went_to_sleep|date:'H:i e'}}</tr>
+          <div class="sleep-divider"></div>
+          <tr>
+            <td>Time woke in the morning: {{ sleep.time_woke_in_morning|date:'H:i e'}}</tr>
+        </table>
+      </div>
+      </div>
+
+
+  {% endblock %}
