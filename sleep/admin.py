@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Sleep, SleepInterruption
+from .models import Participant, Sleep, SleepInterruption
 
 class SleepInterruptionInline(admin.TabularInline):
     model = SleepInterruption
@@ -20,3 +20,4 @@ class SleepAdmin(admin.ModelAdmin):
     search_fields = ['sleep_date']
 
 admin.site.register(Sleep, SleepAdmin)
+admin.site.register(Participant)

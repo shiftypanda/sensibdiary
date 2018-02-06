@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!Doctype: html>
+<html>
+  <head>
+    <title>SenSibDiary</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/sleep.css' %}">
+  </head>
+  <body>
+    <div class"page-header">
+      #<!-- TODO: Nav menu here for authenticated users -->
+      <!-- TODO: Nav menu here for anonymous users / login redirect -->
+
+      <h1><a href="/">SenSibDiary</a></h1>
+    </div>
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+          {% blockcontent %}
+          {% endblock%}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
