@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'intervention',
     'behaviour',
     'sleep',
+    'functional_tests'
 ]
 
 MIDDLEWARE = [

@@ -1,10 +1,16 @@
 {% extends 'sleep/base.html' %}
   {% block content %}
-    {% for sleep in latest_sleeps_lists %}
-
-        <p class="date">Sleep date: {{ sleep.sleep_date|date:'d-m-Y'}}</p>
-          <div class="sleep-divider"></div>
-
-      {% endfor %}
-
+  <h1> Sleep Diary entries </h1>
+  <table>
+    <tr class="table-header">
+    <td> Date </td>
+    <td> Total time asleep </td>
+  </tr>
+    {% for sleep in latest_sleeps_list %}
+    <tr>
+      <td class="table-first-col"> {{ sleep.sleep_date|date:'d-m-Y'}}</td>
+      <td> {{ sleep.total_time_asleep }} </td>
+    </tr>
+    {% endfor %}
+  </table>
   {% endblock %}
