@@ -1,0 +1,15 @@
+{
+  "name": "sensibdiary",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
